@@ -16,6 +16,17 @@ img{
     width: 100%;
 }
 
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.btn:hover{
+    transform: scaleX(1.08);
+}
+
 .container{
     width: 100%;
     max-width: 960px;
@@ -24,7 +35,7 @@ img{
 
 
  nav ul .logo{
-    width: 180px;
+    width: 160px;
     display: block;
     margin-left: 0px;
  }
@@ -51,7 +62,7 @@ nav ul{
 .nav-items li a{
     color: #000;
     font-weight: 500;
-    transition: .3s;
+    transition: .2s;
 }
 
 .nav-items li a:hover{
@@ -65,3 +76,49 @@ nav ul{
     padding: 10px;
     border-radius: 50%;
 }
+
+header{
+    background: url(../img/background.png) no-repeat right;
+
+}
+
+/* banner css */
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.child-banner{
+    width: 45%;
+}
+
+.child-banner h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #575A68;
+}
+
+.child-banner p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #76767e;
+}
+
+.child-banner .btn1{
+    color: #C686D1;
+    background: #fff;
+    border: 1px solid#C686D1;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.child-banner .btn2{
+    color: #fff;
+    background: #C686D1;
+    border: 1px solid#C686D1;
+}
+
