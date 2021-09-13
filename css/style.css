@@ -22,36 +22,46 @@ img{
     margin: 0 auto;
 }
 
-.list-items{
+
+ nav ul .logo{
+    width: 180px;
+    display: block;
+    margin-left: 0px;
+ }
+
+nav ul{
     display: flex;
-    justify-content: space-between;
+    padding: 15px 0px;
     align-items: center;
-    padding: 1rem 0;
+    justify-content: space-between;
+ }
+
+.main-menu{
+    display: flex;
 }
 
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
 
-.list-items li a{
-    font-weight: 600;
 }
 
-.list-items li a:hover{
+.nav-items li a{
+    color: #000;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-items li a:hover{
     color: #C686D1;
 }
 
-.shipping-karct{
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    background: lightgrey;
+.cart{
+    width: 15px;
+    height: 15px;
+    background: lightgray;
+    padding: 10px;
     border-radius: 50%;
-    color: honeydew;
-}
-
-
-
-
-@media(max-width: 960px) {
-    .list-items{
-        flex-direction: column;
-    }
 }
