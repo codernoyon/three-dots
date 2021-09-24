@@ -1,7 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'arial';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 li{
@@ -14,6 +21,23 @@ a{
 
 img{
     width: 100%;
+}
+
+section{
+    padding: 100px 0px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: #dddddd
+}
+
+::-webkit-scrollbar-thumb{
+    background: #C686D1;
+    border-radius: 20px;
 }
 
 .btn{
@@ -122,3 +146,62 @@ header{
     border: 1px solid#C686D1;
 }
 
+/* featured seciton css start */
+
+.inner-featured{
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-featured{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+.watch-box {
+    background: #FBF2FD;
+    padding: 56px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.watch-text h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #696969;
+}
+
+.watch-image{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.headphone-box, .smartphone-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.headphone-image, .smartphone-image{
+    width: 95px;
+}
+.smartphone-box{
+     padding-bottom: 0px;
+     margin-top: 35px;
+}
+
+.smartphone-text h4, .headphone-text h4{
+    margin-bottom: 10px;
+    color: #696969;
+}
